@@ -17,7 +17,7 @@ function Admin() {
       <div className="flex-1 bg-gray-100">
         {/* Header Section */}
         <div className="sticky top-0  flex items-center justify-between p-6  ">
-          <h1 className="text-3xl font-bold text-blue-500">Admin Dashboard Testing</h1>
+          <h1 className="text-3xl font-bold text-blue-500">Admin Dashboard </h1>
           <Clock/>
         </div>
 
