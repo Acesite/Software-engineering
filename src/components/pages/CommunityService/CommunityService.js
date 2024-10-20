@@ -43,7 +43,7 @@ function CommunityService() {
       <div className="flex-1 bg-gray-100">
         {/* Header Section */}
         <div className="sticky top-0  flex items-center justify-between p-6  shadow-md bg-[#F3F4F6]">
-          <h1 className="text-2xl font-bold text-blue-500">Manage Community Service Tasks</h1>
+          <h1 className="text-2xl font-bold text-black-500">Manage Community Service Tasks</h1>
         </div>
 
         {/* Main Content Section */}
@@ -59,7 +59,7 @@ function CommunityService() {
 
             {/* Task List Section */}
             <div className="bg-white shadow-lg rounded-lg p-6">
-              <h2 className="text-xl font-semibold text-blue-500 mb-4">Task List</h2>
+              <h2 className="text-xl font-semibold text-black-500 mb-4">Task List</h2>
               <TaskList tasks={tasks} onEdit={handleTaskEdit} onDelete={handleTaskDelete} />
             </div>
           </div>

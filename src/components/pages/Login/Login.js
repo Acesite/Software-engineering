@@ -15,7 +15,7 @@ function Login() {
           </div>
           <h2 className="text-2xl font-semibold mt-5 ">Sign in</h2>
           <p className="text-gray-600 mb-6">
-            Please sign in your admin account
+            Please sign in your  account
             <a href="#" className="text-blue-600"></a>
           </p>
           <form>

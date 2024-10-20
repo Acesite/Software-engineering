@@ -61,7 +61,7 @@ export default function StudentProfile() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold text-blue-500">Student Profiles</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-black-500">Student Profiles</h1>
             <p className="text-sm md:text-base text-gray-500">
               A list of students and their community service hours, status, and other details.
             </p>

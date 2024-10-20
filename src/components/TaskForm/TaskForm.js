@@ -85,7 +85,7 @@ const TaskForm = ({ newTask, handleChange, handleAddTask }) => {
 
   return (
     <div className="bg-white p-6 rounded shadow-md mb-5">
-      <h2 className="text-xl font-semibold mb-4 text-blue-500">Add New Task</h2>
+      <h2 className="text-xl font-semibold mb-4 text-black-500">Assign Task</h2>
 
       {/* Error Message */}
       {error && (
@@ -184,7 +184,7 @@ const TaskForm = ({ newTask, handleChange, handleAddTask }) => {
 
       {/* Other fields */}
       <div className="mb-4">
-        <label className="block font-semibold">Nature of Violation</label>
+        <label className="block font-semibold"> Violation</label>
         <input
           type="text"
           name="violation"

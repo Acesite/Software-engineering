@@ -17,7 +17,7 @@ function Admin() {
       <div className="flex-1 bg-gray-100">
         {/* Header Section */}
         <div className="sticky top-0  flex items-center justify-between p-6  ">
-          <h1 className="text-3xl font-bold text-blue-500">Admin Dashboard </h1>
+          <h1 className="text-3xl font-bold text-black-500">Admin Dashboard </h1>
           <Clock/>
         </div>
 
@@ -31,7 +31,7 @@ function Admin() {
 
         {/* Recent Student Activities */}
         <div className="bg-white shadow-md rounded-lg p-6 mb-8 mx-6">
-          <h2 className="text-xl font-semibold mb-4 text-blue-500">Recent Student Activities</h2>
+          <h2 className="text-xl font-semibold mb-4 text-black-500">Recent Student Activities</h2>
           <ul className="space-y-4">
             <li className="flex justify-between">
               <span>Dave logged 5 hours at Library</span>
@@ -46,7 +46,7 @@ function Admin() {
 
         {/* Students Near Completion */}
         <div className="bg-white shadow-md rounded-lg p-6 mb-8 mx-6">
-          <h2 className="text-xl font-semibold mb-4 text-blue-500">Students Near Completion</h2>
+          <h2 className="text-xl font-semibold mb-4 text-black-500">Students Near Completion</h2>
           <ul className="space-y-4">
             <li className="flex justify-between">
               <span>Jane - 6 hours completed / 8 hours total</span>
@@ -61,7 +61,7 @@ function Admin() {
 
         {/* Quick Actions */}
 <div className="bg-white shadow-md rounded-lg p-6 mx-6 mb-8">
-  <h2 className="text-xl font-semibold mb-4 text-blue-500">Quick Actions</h2>
+  <h2 className="text-xl font-semibold mb-4 text-black-500">Quick Actions</h2>
   <div className="space-x-4">
     <Link to="/assign-task">
       <button className="bg-blue-600 text-white px-4 py-2 rounded-lg">Assign Task</button>

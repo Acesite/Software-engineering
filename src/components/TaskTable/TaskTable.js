@@ -51,7 +51,7 @@ const TaskTable = ({ tasks, onLogHours, onEditTask, onDeleteTask }) => {
 
   return (
     <div className="bg-white p-6 rounded shadow-md overflow-x-auto">
-      <h2 className="text-xl font-semibold mb-4 text-center text-blue-500">Community Service Tasks</h2>
+      <h2 className="text-xl font-semibold mb-4 text-center text-black-500">Community Service Tasks</h2>
       {tasks.length === 0 ? (
         <p className="text-center">No tasks available. Please add a task.</p>
       ) : (
@@ -62,7 +62,7 @@ const TaskTable = ({ tasks, onLogHours, onEditTask, onDeleteTask }) => {
                 <th className="py-2 px-4 border-b text-sm">Student Name</th>
                 <th className="py-2 px-4 border-b text-sm">Track</th>
                 <th className="py-2 px-4 border-b text-sm">Strand</th>
-                <th className="py-2 px-4 border-b text-sm">Task</th> {/* New Task column */}
+                <th className="py-2 px-4 border-b text-sm">Task</th>
                 <th className="py-2 px-4 border-b text-sm">Violation</th>
                 <th className="py-2 px-4 border-b text-sm">Duty Hours</th>
                 <th className="py-2 px-4 border-b text-sm">Rendered Hours</th>
@@ -80,7 +80,7 @@ const TaskTable = ({ tasks, onLogHours, onEditTask, onDeleteTask }) => {
                   <td className="py-2 px-4 border-b text-sm align-middle">{task.studentName}</td>
                   <td className="py-2 px-4 border-b text-sm align-middle">{task.track}</td>
                   <td className="py-2 px-4 border-b text-sm align-middle">{task.strand}</td>
-                  <td className="py-2 px-4 border-b text-sm align-middle">{task.task}</td> {/* New Task cell */}
+                  <td className="py-2 px-4 border-b text-sm align-middle">{task.task}</td>
                   <td className="py-2 px-4 border-b text-sm align-middle">{task.violation}</td>
                   <td className="py-2 px-4 border-b text-sm align-middle">{task.dutyHours}</td>
                   <td className="py-2 px-4 border-b text-sm align-middle">{task.renderedHours}</td>
@@ -98,22 +98,22 @@ const TaskTable = ({ tasks, onLogHours, onEditTask, onDeleteTask }) => {
                     </span>
                   </td>
                   <td className="py-2 px-4 border-b text-sm align-middle">
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-row items-center justify-center space-x-1">
                       <button
                         onClick={() => onLogHours(task)}
-                        className="text-green px-4 py-2 rounded  mb-2"
+                        className="text-green px-4 py-2 rounded"
                       >
                         <TbClockPlus className="w-5 h-5 inline-block text-green-800" />
                       </button>
                       <button
                         onClick={() => onEditTask(task)}
-                        className="text-black px-4 py-2 rounded  mb-2"
+                        className="text-black px-4 py-2 rounded"
                       >
                         <CiEdit className="w-5 h-5 inline-block text-blue-500" />
                       </button>
                       <button
                         onClick={() => openModal(task)}
-                        className="text-red px-4 py-2 rounded "
+                        className="text-red px-4 py-2 rounded"
                       >
                         <CiTrash className="w-5 h-5 inline-block text-red-500" />
                       </button>

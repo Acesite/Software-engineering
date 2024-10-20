@@ -13,7 +13,7 @@ const Clock = () => {
 
   return (
     <div className="text-black p-2 rounded-lg">
-      <h2 className="text-lg font-semibold">Time</h2>
+      <h2 className="text-lg font-semibold"></h2>
       <p className="text-xl">{time}</p>
     </div>
   );
